@@ -2,7 +2,7 @@
 <p>Masuk untuk membuka dashboard</p>
 
 @if ($errors->any())
-    <p style="color:red">{{ $errors->first }}</p>
+    <p style="color:red">{{ $errors->first() }}</p>
 @endif
 
 <form method="POST" action="{{ route('login') }}">
